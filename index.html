@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visualize rapidamente arquivos Word e Excel diretamente no SEI, sem precisar baixá-los para o computador.">
+  <title>SEI - Visualizador de Documentos Office</title>
+  <link rel="canonical" href="https://seall0.github.io/sei-visualizador-office/">
+  <link rel="icon" type="image/png" sizes="128x128" href="/sei-visualizador-office/assets/icon-128.png">
+  <link rel="stylesheet" href="/sei-visualizador-office/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/sei-visualizador-office/">
+        <img src="/sei-visualizador-office/assets/icon-128.png" width="48" height="48" alt="">
+        <span>SEI - Visualizador de Documentos Office</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="/sei-visualizador-office/" aria-current="page">Projeto</a>
+        <a href="/sei-visualizador-office/privacidade/">Privacidade</a>
+        <a href="/sei-visualizador-office/suporte/">Suporte</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" class="wrap" tabindex="-1">
+    <div class="hero">
+      <p class="eyebrow">Versão de avaliação · 0.9.0-beta.1</p>
+      <h1>SEI - Visualizador de Documentos Office</h1>
+      <p class="lead">Visualize rapidamente arquivos Word e Excel diretamente no SEI, sem precisar baixá-los para o computador.</p>
+      <ul class="formats" aria-label="Formatos e modo de uso"><li>DOC</li><li>DOCX</li><li>XLS</li><li>XLSX</li><li>Somente leitura</li></ul>
+    </div>
+    <div class="content-grid">
+      <nav class="contents" aria-label="Nesta página">
+        <h2>Nesta página</h2>
+        <ul>
+            <li><a href="#leitura-de-word-e-excel-no-sei">Leitura de Word e Excel no SEI</a></li>
+            <li><a href="#processamento-no-navegador">Processamento no navegador</a></li>
+            <li><a href="#compatibilidade-e-acesso">Compatibilidade e acesso</a></li>
+            <li><a href="#sobre-o-projeto">Sobre o projeto</a></li>
+        </ul>
+      </nav>
+      <div class="reading">
+          <section aria-labelledby="leitura-de-word-e-excel-no-sei">
+            <h2 id="leitura-de-word-e-excel-no-sei">Leitura de Word e Excel no SEI</h2>
+            <p class="intro">Abra uma prévia de documentos Word e planilhas Excel diretamente no painel do SEI. A versão de avaliação 0.9.0-beta.1 permite consultar anexos DOC, DOCX, XLS e XLSX, buscar texto, ajustar o zoom e alternar entre abas de planilhas, em instalações compatíveis.</p>
+            <p class="intro">A prévia é somente leitura. PDF e documentos internos continuam no fluxo nativo do SEI, e o arquivo original permanece disponível para download manual. As fórmulas das planilhas não são recalculadas; são apresentados os valores salvos no arquivo. Macros não são executadas.</p>
+          </section>
+          <section aria-labelledby="processamento-no-navegador">
+            <h2 id="processamento-no-navegador">Processamento no navegador</h2>
+            <p>A extensão obtém o anexo do próprio SEI por HTTPS, usando a sessão já aberta, e o processa localmente. Você evita baixar manualmente o arquivo para abrir em outro aplicativo, mas o navegador ainda precisa receber seus dados. A extensão não envia documentos ao desenvolvedor nem usa conversão em nuvem.</p>
+            <p>O zoom fica salvo localmente. Após identificar um contexto candidato a SEI, a extensão também registra automaticamente um diagnóstico técnico temporário para investigar falhas da prévia. Esse registro não contém o conteúdo documental, URLs, nomes, credenciais, cookies, tokens, pesquisas, área de transferência, conteúdo da página ou exceções brutas. Tem até 200 eventos e 64 KiB por aba, atravessa a atualização da página e expira após 15 minutos sem novos eventos técnicos aceitos. A remoção física ocorre conforme a execução dos componentes do navegador; não é prometido apagamento no segundo exato.</p>
+            <p>O diagnóstico não é enviado automaticamente. Você pode copiá-lo pelo popup e decidir separadamente se deseja enviá-lo ao suporte. Copiar não apaga o histórico nem reinicia o prazo de expiração. Consulte os detalhes na política de privacidade.</p>
+          </section>
+          <section aria-labelledby="compatibilidade-e-acesso">
+            <h2 id="compatibilidade-e-acesso">Compatibilidade e acesso</h2>
+            <p>O acesso a páginas HTTPS permite reconhecer estruturas SEI em endereços diferentes, sem uma lista fixa de sites. Há verificações de estrutura e um componente que responde à consulta do popup; a simples presença desses componentes não significa que uma página tenha sido reconhecida como compatível. O histórico técnico começa somente em um contexto candidato. O acesso automático não abrange HTTP.</p>
+            <p>Esta é uma versão de avaliação para pré-visualização local e somente leitura de anexos em instalações SEI compatíveis. A reprodução pode apresentar diferenças em relação ao aplicativo de origem. O arquivo original permanece disponível para download e deve ser usado quando a fidelidade integral for necessária. A compatibilidade depende da estrutura da instalação. Projeto individual, independente e sem vínculo ou endosso institucional.</p>
+          </section>
+          <section aria-labelledby="sobre-o-projeto">
+            <h2 id="sobre-o-projeto">Sobre o projeto</h2>
+            <p>Iniciativa individual e independente, gratuita e sem anúncios, doações ou monetização nesta versão. A distribuição inicial será não listada, por link compartilhado com colegas testadores. Não listado não significa acesso privado: qualquer pessoa que receba o link poderá instalar a extensão. Esta página não divulga esse link.</p>
+            <p>O código da extensão permanece privado. As páginas de apresentação, privacidade e suporte são material público separado.</p>
+          </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="contact">
+        <p>SEI - Visualizador de Documentos Office</p>
+        <a href="mailto:sei.visualizador.office@gmail.com">sei.visualizador.office@gmail.com</a>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="/sei-visualizador-office/">Projeto</a>
+        <a href="/sei-visualizador-office/privacidade/">Privacidade</a>
+        <a href="/sei-visualizador-office/suporte/">Suporte</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
