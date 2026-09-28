@@ -28,7 +28,7 @@
     <div class="hero">
       <p class="eyebrow">SEI - Visualizador de Documentos Office</p>
       <h1>Política de privacidade</h1>
-      <p class="effective-date">Vigência: 17/09/2026</p>
+      <p class="effective-date">Vigência: 28/09/2026</p>
     </div>
     <div class="content-grid">
       <nav class="contents" aria-label="Nesta página">
@@ -37,7 +37,7 @@
             <li><a href="#sobre-esta-politica">Sobre esta política</a></li>
             <li><a href="#anexos-pagina-e-conexao-com-o-sei">Anexos, página e conexão com o SEI</a></li>
             <li><a href="#preferencias-de-zoom">Preferências de zoom</a></li>
-            <li><a href="#diagnostico-tecnico-automatico-e-temporario">Diagnóstico técnico automático e temporário</a></li>
+            <li><a href="#consentimento-e-diagnostico-tecnico-temporario">Consentimento e diagnóstico técnico temporário</a></li>
             <li><a href="#suporte-voluntario">Suporte voluntário</a></li>
             <li><a href="#uso-limitado-e-compartilhamento">Uso limitado e compartilhamento</a></li>
             <li><a href="#contato-e-mudancas">Contato e mudanças</a></li>
@@ -46,7 +46,6 @@
       <div class="reading">
           <section aria-labelledby="sobre-esta-politica">
             <h2 id="sobre-esta-politica">Sobre esta política</h2>
-            <p class="intro">Responsável: Rennan Faria. Contato para privacidade e suporte: <a href="mailto:sei.visualizador.office@gmail.com">sei.visualizador.office@gmail.com</a>.</p>
             <p class="intro">Esta política descreve a versão de avaliação 0.9.0-beta.1. O projeto é individual e independente, sem vínculo ou endosso institucional. Sua finalidade é pré-visualizar localmente, em modo somente leitura, anexos de documentos e planilhas em instalações SEI compatíveis, preservando a navegação nativa e o acesso ao arquivo original.</p>
           </section>
           <section aria-labelledby="anexos-pagina-e-conexao-com-o-sei">
@@ -59,13 +58,14 @@
             <h2 id="preferencias-de-zoom">Preferências de zoom</h2>
             <p>O nível de zoom de documentos Word e de planilhas é salvo no armazenamento local da extensão para ser reutilizado. Essa preferência é persistente, não tem o prazo de 15 minutos do diagnóstico e pode ser alterada nos controles de zoom. Não contém os documentos nem suas pesquisas. A remoção da extensão elimina seu armazenamento local pelo mecanismo do navegador.</p>
           </section>
-          <section aria-labelledby="diagnostico-tecnico-automatico-e-temporario">
-            <h2 id="diagnostico-tecnico-automatico-e-temporario">Diagnóstico técnico automático e temporário</h2>
-            <p>Após identificar um contexto candidato a SEI, mesmo que a compatibilidade completa ainda não tenha sido confirmada, a extensão registra automaticamente eventos técnicos relacionados à prévia. Eles ajudam a investigar falhas e incluem etapas de funcionamento, resultados, códigos limitados de erro, duração, formato do arquivo e correlações temporárias entre operações. Metadados temporários do navegador separam abas e frames; a cópia do diagnóstico não inclui seus identificadores internos. A consulta do popup também apresenta versão e estado de compatibilidade, com capacidades técnicas e contagens limitadas.</p>
-            <p>O diagnóstico não registra conteúdo documental, URLs ou seus hashes, nomes de pessoas ou arquivos, credenciais, cookies, tokens, pesquisas, conteúdo da área de transferência, conteúdo da página, mensagens de exceção ou pilhas de erro brutas. Não é um histórico geral de navegação. As verificações iniciais podem ser carregadas em páginas HTTPS comuns, e o popup pode consultar sua compatibilidade; essas páginas não geram novos eventos do histórico técnico quando não são reconhecidas como candidatas.</p>
+          <section aria-labelledby="consentimento-e-diagnostico-tecnico-temporario">
+            <h2 id="consentimento-e-diagnostico-tecnico-temporario">Consentimento e diagnóstico técnico temporário</h2>
+            <p>Antes do seu aceite explícito, o registro técnico fica desligado. A prévia funciona sem esse aceite. O botão “Habilitar diagnóstico de erros” do popup abre uma janela de confirmação própria da extensão; somente “Habilitar diagnóstico” nessa janela confirma. “Agora não”, fechar ou apenas consultar não habilitam o registro. O aceite mínimo e versionado fica em armazenamento local persistente, separado da preferência de zoom; não há desativação interna nesta versão. A expiração do histórico não revoga a habilitação. Erros anteriores ao aceite não podem ser recuperados e talvez seja necessário reproduzir o problema depois.</p>
+            <p>Após o aceite, em contexto candidato a SEI, a extensão registra eventos técnicos da prévia para investigar problemas: etapas, resultados, durações, códigos técnicos, formato e correlações temporárias, inclusive operações bem-sucedidas. Metadados temporários do navegador separam abas e frames; a cópia não inclui seus identificadores internos. A consulta estrutural do popup apresenta versão e estado de compatibilidade separadamente do histórico e não constitui aceite.</p>
+            <p>O diagnóstico não registra conteúdo documental, URLs ou seus hashes, nomes de pessoas ou arquivos, credenciais, cookies, tokens, pesquisas, conteúdo da área de transferência, DOM, mensagens de exceção ou pilhas de erro brutas. Não é um histórico geral de navegação. As verificações iniciais podem ser carregadas em páginas HTTPS comuns, e o popup pode consultar sua compatibilidade; essas páginas não geram novos eventos do histórico técnico quando não são reconhecidas como candidatas.</p>
             <p>O histórico fica no armazenamento de sessão da extensão, separado por aba, com no máximo 200 eventos e 64 KiB por aba. Os eventos mais antigos podem ser descartados para respeitar os limites. Há também limites globais de armazenamento que podem remover históricos antes do prazo.</p>
             <p>A atualização da página não limpa o histórico. Erros, troca de documento, fechamento da prévia e saída do contexto candidato podem preservar os eventos recentes, inclusive de liberação de recursos. O prazo é de 15 minutos desde o último evento técnico aceito: um novo evento renova a atividade, mas abrir o popup, consultar ou copiar não renova. Depois do prazo, o histórico é recusado antes de ser usado ou exportado. A remoção do registro armazenado depende da execução do componente de fundo do navegador e pode ocorrer ao retomar sua execução; não prometemos apagamento físico no instante exato da expiração. O fechamento da aba aciona a remoção do seu histórico.</p>
-            <p>Não há envio automático do diagnóstico, botão “Limpar diagnóstico” ou cópia automática. Ao selecionar “Copiar diagnóstico”, você solicita uma cópia atualizada; se o navegador não permitir a escrita na área de transferência, o popup oferece o texto para seleção manual. Copiar não apaga o histórico. A extensão não apaga cópias que você tenha salvo, colado ou enviado.</p>
+            <p>Não há envio automático do diagnóstico, página de opções nem botão interno de limpar ou desativar. Após o aceite, “Copiar diagnóstico” solicita uma cópia atualizada; se o navegador não permitir a escrita na área de transferência, o popup oferece o texto para seleção manual. Copiar não apaga o histórico nem renova seu prazo. A extensão não apaga cópias que você tenha salvo, colado ou enviado.</p>
           </section>
           <section aria-labelledby="suporte-voluntario">
             <h2 id="suporte-voluntario">Suporte voluntário</h2>
@@ -74,12 +74,13 @@
           </section>
           <section aria-labelledby="uso-limitado-e-compartilhamento">
             <h2 id="uso-limitado-e-compartilhamento">Uso limitado e compartilhamento</h2>
-            <p>O uso dos dados descritos nesta política observa a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Limited Use (Uso Limitado). Os dados são utilizados para a prévia e seu suporte, manutenção e segurança. Não são vendidos nem usados para anúncios, perfilamento, avaliação de crédito ou concessão de empréstimos. Não há anúncios, doações ou monetização nesta versão. <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Política de Uso Limitado da Chrome Web Store</a>.</p>
-            <p>O desenvolvedor não recebe automaticamente seus anexos ou diagnósticos. As partes envolvidas nos fluxos descritos são o próprio serviço SEI para obter o anexo, o responsável e os provedores de e-mail quando você procura suporte. As páginas públicas do projeto serão hospedadas no GitHub Pages; ao visitá-las, o serviço de hospedagem poderá tratar dados de acesso segundo suas próprias práticas. A extensão não envia o conteúdo do SEI a essa hospedagem. Os serviços acessados voluntariamente por hyperlinks também possuem suas próprias políticas.</p>
+            <p>O uso dos dados descritos nesta política está em conformidade com a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Uso Limitado (Limited Use). Os dados são utilizados para a prévia e seu suporte, manutenção e segurança. Não são vendidos nem usados para anúncios, perfilamento, avaliação de crédito ou concessão de empréstimos. Não há anúncios, doações ou monetização nesta versão. <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Política de Uso Limitado da Chrome Web Store</a>.</p>
+            <p>O desenvolvedor não recebe automaticamente seus anexos ou diagnósticos. As partes envolvidas nos fluxos descritos são o próprio serviço SEI para obter o anexo, o responsável e os provedores de e-mail quando você procura suporte. As páginas públicas do projeto são hospedadas no GitHub Pages; ao visitá-las, o serviço de hospedagem poderá tratar dados de acesso segundo suas próprias práticas. A extensão não envia o conteúdo do SEI a essa hospedagem. Os serviços acessados voluntariamente por hyperlinks também possuem suas próprias políticas.</p>
           </section>
           <section aria-labelledby="contato-e-mudancas">
             <h2 id="contato-e-mudancas">Contato e mudanças</h2>
             <p>Para esclarecer o tratamento de dados ou solicitar exclusão de informações enviadas ao suporte, escreva para <a href="mailto:sei.visualizador.office@gmail.com">sei.visualizador.office@gmail.com</a>. Mudanças nas práticas descritas serão informadas antes de serem aplicadas, com atualização da política e de sua data de vigência.</p>
+            <p>Responsável: Rennan Faria. Contato para privacidade e suporte: <a href="mailto:sei.visualizador.office@gmail.com">sei.visualizador.office@gmail.com</a>.</p>
           </section>
       </div>
     </div>

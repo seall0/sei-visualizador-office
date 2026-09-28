@@ -36,8 +36,8 @@
         <h2>Nesta página</h2>
         <ul>
             <li><a href="#leitura-de-word-e-excel-no-sei">Leitura de Word e Excel no SEI</a></li>
-            <li><a href="#processamento-no-navegador">Processamento no navegador</a></li>
-            <li><a href="#compatibilidade-e-acesso">Compatibilidade e acesso</a></li>
+            <li><a href="#armazenamento-de-dados-e-logging">Armazenamento de dados e logging</a></li>
+            <li><a href="#suporte">Suporte</a></li>
             <li><a href="#sobre-o-projeto">Sobre o projeto</a></li>
         </ul>
       </nav>
@@ -46,22 +46,20 @@
             <h2 id="leitura-de-word-e-excel-no-sei">Leitura de Word e Excel no SEI</h2>
             <p class="intro">Abra uma prévia de documentos Word e planilhas Excel diretamente no painel do SEI. A versão de avaliação 0.9.0-beta.1 permite consultar anexos DOC, DOCX, XLS e XLSX, buscar texto, ajustar o zoom e alternar entre abas de planilhas, em instalações compatíveis.</p>
             <p class="intro">A prévia é somente leitura. PDF e documentos internos continuam no fluxo nativo do SEI, e o arquivo original permanece disponível para download manual. As fórmulas das planilhas não são recalculadas; são apresentados os valores salvos no arquivo. Macros não são executadas.</p>
-          </section>
-          <section aria-labelledby="processamento-no-navegador">
-            <h2 id="processamento-no-navegador">Processamento no navegador</h2>
             <p>A extensão obtém o anexo do próprio SEI por HTTPS, usando a sessão já aberta, e o processa localmente. Você evita baixar manualmente o arquivo para abrir em outro aplicativo, mas o navegador ainda precisa receber seus dados. A extensão não envia documentos ao desenvolvedor nem usa conversão em nuvem.</p>
-            <p>O zoom fica salvo localmente. Após identificar um contexto candidato a SEI, a extensão também registra automaticamente um diagnóstico técnico temporário para investigar falhas da prévia. Esse registro não contém o conteúdo documental, URLs, nomes, credenciais, cookies, tokens, pesquisas, área de transferência, conteúdo da página ou exceções brutas. Tem até 200 eventos e 64 KiB por aba, atravessa a atualização da página e expira após 15 minutos sem novos eventos técnicos aceitos. A remoção física ocorre conforme a execução dos componentes do navegador; não é prometido apagamento no segundo exato.</p>
-            <p>O diagnóstico não é enviado automaticamente. Você pode copiá-lo pelo popup e decidir separadamente se deseja enviá-lo ao suporte. Copiar não apaga o histórico nem reinicia o prazo de expiração. Consulte os detalhes na política de privacidade.</p>
           </section>
-          <section aria-labelledby="compatibilidade-e-acesso">
-            <h2 id="compatibilidade-e-acesso">Compatibilidade e acesso</h2>
-            <p>O acesso a páginas HTTPS permite reconhecer estruturas SEI em endereços diferentes, sem uma lista fixa de sites. Há verificações de estrutura e um componente que responde à consulta do popup; a simples presença desses componentes não significa que uma página tenha sido reconhecida como compatível. O histórico técnico começa somente em um contexto candidato. O acesso automático não abrange HTTP.</p>
-            <p>Esta é uma versão de avaliação para pré-visualização local e somente leitura de anexos em instalações SEI compatíveis. A reprodução pode apresentar diferenças em relação ao aplicativo de origem. O arquivo original permanece disponível para download e deve ser usado quando a fidelidade integral for necessária. A compatibilidade depende da estrutura da instalação. Projeto individual, independente e sem vínculo ou endosso institucional.</p>
+          <section aria-labelledby="armazenamento-de-dados-e-logging">
+            <h2 id="armazenamento-de-dados-e-logging">Armazenamento de dados e logging</h2>
+            <p>O nível de zoom de documentos Word e de planilhas é salvo no armazenamento local da extensão para ser reutilizado.</p>
+            <p>Caso encontre algum problema, habilite o registro técnico clicando em “Habilitar diagnóstico de erros” no popup da extensão. Depois do aceite, o diagnóstico registra etapas, resultados, durações e códigos técnicos para investigar problemas, inclusive operações bem-sucedidas. Esse histórico não contém documentos, URLs, nomes, credenciais, cookies, tokens, pesquisas, conteúdo da área de transferência, DOM ou exceções brutas e expira após 15 minutos sem novo evento técnico aceito. Depois do aceite, o popup oferece “Copiar diagnóstico” para que você compartilhe os dados técnicos com o desenvolvedor. Consulte os detalhes na política de privacidade.</p>
+          </section>
+          <section aria-labelledby="suporte">
+            <h2 id="suporte">Suporte</h2>
+            <p>Dúvidas ou problemas? Entre em contato: <a href="mailto:sei.visualizador.office@gmail.com">sei.visualizador.office@gmail.com</a>. O atendimento é individual, sem prazo de resposta garantido. Este projeto é independente e não representa suporte oficial ao SEI ou aos aplicativos de edição.</p>
           </section>
           <section aria-labelledby="sobre-o-projeto">
             <h2 id="sobre-o-projeto">Sobre o projeto</h2>
-            <p>Iniciativa individual e independente, gratuita e sem anúncios, doações ou monetização nesta versão. A distribuição inicial será não listada, por link compartilhado com colegas testadores. Não listado não significa acesso privado: qualquer pessoa que receba o link poderá instalar a extensão. Esta página não divulga esse link.</p>
-            <p>O código da extensão permanece privado. As páginas de apresentação, privacidade e suporte são material público separado.</p>
+            <p>Iniciativa individual, independente, gratuita e sem anúncios.</p>
           </section>
       </div>
     </div>
